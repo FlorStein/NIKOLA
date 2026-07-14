@@ -52,6 +52,8 @@ export default function Home() {
     <main>
       <header className="site-header" aria-label="Navegacion principal">
         <a className="brand-mark" href="#inicio" aria-label="Nikola inicio">
+          <span className="ear left-ear" aria-hidden="true" />
+          <span className="ear right-ear" aria-hidden="true" />
           Nikola
         </a>
         <nav>
@@ -123,21 +125,6 @@ export default function Home() {
             </div>
           </article>
         ))}
-      </section>
-
-      <section className="section color-band">
-        <div>
-          <span>Aegean Sky</span>
-          <strong>#1A6FBF</strong>
-        </div>
-        <div>
-          <span>Sandy Linen</span>
-          <strong>#F5F0E8</strong>
-        </div>
-        <div>
-          <span>Scarlet Bikini</span>
-          <strong>#D91A2A</strong>
-        </div>
       </section>
 
       <section className="section objects" id="objetos">

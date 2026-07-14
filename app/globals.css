@@ -3,7 +3,6 @@
   --linen: #f5f0e8;
   --scarlet: #d91a2a;
   --pink: #f6a8c9;
-  --orange: #ff7b22;
   --ink: #201816;
   --green: #22734d;
   --shadow: 0 22px 60px rgba(32, 24, 22, 0.18);
@@ -45,7 +44,7 @@ a {
   justify-content: space-between;
   gap: 24px;
   padding: 18px clamp(18px, 5vw, 64px);
-  background: var(--orange);
+  background: var(--linen);
   border-bottom: 3px solid var(--ink);
 }
 
@@ -59,8 +58,39 @@ a {
   font-weight: 900;
   line-height: 0.82;
   letter-spacing: 0;
-  color: white;
-  text-shadow: 2px 2px 0 var(--scarlet);
+  color: var(--sky);
+  text-shadow: 2px 2px 0 var(--pink);
+}
+
+.ear {
+  position: absolute;
+  top: -12px;
+  width: 30px;
+  height: 34px;
+  border: 4px solid var(--sky);
+  border-bottom: 0;
+  border-radius: 70% 70% 10% 10%;
+  background: var(--linen);
+  box-shadow: 3px 3px 0 var(--pink);
+  transform-origin: bottom center;
+}
+
+.ear::after {
+  content: "";
+  position: absolute;
+  inset: 8px 8px 5px;
+  border-radius: inherit;
+  background: var(--pink);
+}
+
+.left-ear {
+  left: 2px;
+  transform: rotate(-20deg);
+}
+
+.right-ear {
+  left: 48px;
+  transform: rotate(18deg);
 }
 
 nav {
@@ -299,50 +329,12 @@ p {
   text-align: right;
 }
 
-.color-band {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding-block: 0;
-  border-block: 3px solid var(--ink);
-}
-
-.color-band div {
-  min-height: 210px;
-  padding: 28px;
-  border-right: 3px solid var(--ink);
-}
-
-.color-band div:nth-child(1) {
-  background: var(--sky);
-  color: white;
-}
-
-.color-band div:nth-child(2) {
-  background: var(--linen);
-}
-
-.color-band div:nth-child(3) {
-  background: var(--scarlet);
-  color: white;
-  border-right: 0;
-}
-
-.color-band span,
-.color-band strong {
-  display: block;
-  font-size: clamp(1.2rem, 2.8vw, 2.4rem);
-}
-
-.color-band strong {
-  margin-top: 12px;
-}
-
 .objects {
   display: grid;
   grid-template-columns: 0.72fr 1.28fr;
   gap: clamp(28px, 5vw, 70px);
   align-items: start;
-  background: var(--orange);
+  background: var(--pink);
   border-bottom: 3px solid var(--ink);
 }
 
@@ -481,20 +473,9 @@ p {
     width: 52%;
   }
 
-  .color-band,
   .object-grid,
   .lookbook {
     grid-template-columns: 1fr;
-  }
-
-  .color-band div {
-    min-height: 140px;
-    border-right: 0;
-    border-bottom: 3px solid var(--ink);
-  }
-
-  .color-band div:last-child {
-    border-bottom: 0;
   }
 
   .wall-tile {

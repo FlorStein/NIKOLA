@@ -52,8 +52,7 @@ export default function Home() {
     <main>
       <header className="site-header" aria-label="Navegacion principal">
         <a className="brand-mark" href="#inicio" aria-label="Nikola inicio">
-          <span className="ear left-ear" aria-hidden="true" />
-          <span className="ear right-ear" aria-hidden="true" />
+          <span className="cat-line" aria-hidden="true" />
           Nikola
         </a>
         <nav>

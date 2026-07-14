@@ -66,38 +66,6 @@ a {
   color: var(--sky);
 }
 
-.cat-line {
-  position: absolute;
-  left: 6px;
-  top: -18px;
-  width: 84px;
-  height: 33px;
-  border-top: 4px solid var(--sky);
-  border-radius: 50% 50% 0 0;
-}
-
-.cat-line::before,
-.cat-line::after {
-  content: "";
-  position: absolute;
-  top: 3px;
-  width: 23px;
-  height: 23px;
-  border-left: 4px solid var(--sky);
-  border-top: 4px solid var(--sky);
-  border-radius: 6px 0 0 0;
-}
-
-.cat-line::before {
-  left: 2px;
-  transform: rotate(35deg);
-}
-
-.cat-line::after {
-  right: 2px;
-  transform: rotate(55deg) scaleX(-1);
-}
-
 nav {
   display: flex;
   gap: clamp(12px, 3vw, 34px);

@@ -63,37 +63,6 @@ a {
   text-shadow: 2px 2px 0 var(--scarlet);
 }
 
-.cat-ears {
-  position: absolute;
-  left: 9px;
-  top: -10px;
-  width: 62px;
-  height: 30px;
-}
-
-.cat-ears::before,
-.cat-ears::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 29px solid white;
-  filter: drop-shadow(2px 2px 0 var(--scarlet));
-}
-
-.cat-ears::before {
-  left: 0;
-  transform: rotate(-12deg);
-}
-
-.cat-ears::after {
-  right: 0;
-  transform: rotate(12deg);
-}
-
 nav {
   display: flex;
   gap: clamp(12px, 3vw, 34px);
